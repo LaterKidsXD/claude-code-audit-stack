@@ -9,7 +9,7 @@ Three production-tested subagents:
 
 Plus:
 - `audit-on-report-write` PostToolUse hook
-- `.claude-plugin/marketplace.json` for one-command install
+- `.claude-plugin/plugin.json` for one-command `/plugin install`
 - Three invocation examples
 - This roadmap
 

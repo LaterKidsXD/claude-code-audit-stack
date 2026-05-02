@@ -68,4 +68,4 @@ claude-code agent claim-auditor --report eval_report.md --json | \
 
 ## Pairs well with
 
-The `audit-on-report-write` PostToolUse hook in `hooks/audit-on-report-write.json` auto-fires this subagent on any `*.report.md` Write/Edit. Add it to your project's `.claude/settings.local.json` and you get free quality enforcement on every report.
+The PostToolUse hook in `hooks/hooks.json` auto-fires this subagent on any `*.report.md` Write/Edit. When the plugin is installed via `/plugin install`, the hook is wired automatically — no manual config needed.

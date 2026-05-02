@@ -1,0 +1,7 @@
+{
+  "name": "claude-code-audit-stack",
+  "description": "Adversarial verification primitives for Claude Code: bot-deploy-verifier (catches silent skipped restarts), claim-auditor (catches probability-stacking and percentage-vs-percentage-points errors in reports), remote-agent-dispatcher (mechanical scp+spawn for long-running agents on remote hosts).",
+  "author": {
+    "name": "LaterKidsXD"
+  }
+}

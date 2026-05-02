@@ -40,9 +40,9 @@ This installs all 3 subagents and the hook. Subagents auto-route via their `desc
 
 ```bash
 git clone https://github.com/LaterKidsXD/claude-code-audit-stack.git ~/audit-stack
-cp ~/audit-stack/subagents/*.md ~/.claude/agents/
+cp ~/audit-stack/agents/*.md ~/.claude/agents/
 # (optional) copy the hook into your project's .claude/settings.local.json
-cat ~/audit-stack/hooks/audit-on-report-write.json  # paste under hooks.PostToolUse
+cat ~/audit-stack/hooks/hooks.json  # paste the .hooks.PostToolUse block
 ```
 
 ## Examples
