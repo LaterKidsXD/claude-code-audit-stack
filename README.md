@@ -24,7 +24,7 @@ Three trading days passed before anyone noticed. A 3-year backtest replay quanti
 
 The agent didn't lie. It just didn't verify. `bot-deploy-verifier` exists to be the layer that does verify — adversarially, on every deploy.
 
-[Full incident write-up →](docs/silent-skip-incident.md)
+[Full incident write-up →](docs/silent-skip-incident.md) · [Sample audit findings (real, redacted) →](reports/sample-findings.md)
 
 ## Quick start
 
