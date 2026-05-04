@@ -45,6 +45,18 @@ cp ~/audit-stack/agents/*.md ~/.claude/agents/
 cat ~/audit-stack/hooks/hooks.json  # paste the .hooks.PostToolUse block
 ```
 
+### Run it in CI as a GitHub Action
+
+To run `claim-auditor` on every PR — not just locally inside Claude Code — use the [`claude-code-audit-action`](https://github.com/LaterKidsXD/claude-code-audit-action) wrapper. It audits `*.report.md` files in PR diffs, posts a structured findings comment, and fails the check on any P1.
+
+```yaml
+- uses: LaterKidsXD/claude-code-audit-action@v1.0.0
+  with:
+    api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+```
+
+The Action vendors the same `claim-auditor` system prompt this stack ships, so local audits and CI audits stay aligned.
+
 ## Examples
 
 - **`bot-deploy-verifier`:** [verify a config swap](examples/bot-deploy-verifier-invocation.md) — shows a real PASS report and a FAILED-WITH-ROLLBACK report
