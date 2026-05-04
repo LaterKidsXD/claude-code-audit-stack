@@ -50,7 +50,7 @@ cat ~/audit-stack/hooks/hooks.json  # paste the .hooks.PostToolUse block
 To run `claim-auditor` on every PR — not just locally inside Claude Code — use the [`claude-code-audit-action`](https://github.com/LaterKidsXD/claude-code-audit-action) wrapper. It audits `*.report.md` files in PR diffs, posts a structured findings comment, and fails the check on any P1.
 
 ```yaml
-- uses: LaterKidsXD/claude-code-audit-action@v1.0.0
+- uses: LaterKidsXD/claude-code-audit-action@v1
   with:
     api_key: ${{ secrets.ANTHROPIC_API_KEY }}
 ```
