@@ -6,6 +6,8 @@ Adversarial verification primitives for [Claude Code](https://claude.com/claude-
 $ /plugin install claude-code-audit-stack
 ```
 
+> *Pending Anthropic Claude Code plugin marketplace approval (submitted 2026-05-03). Until approved, use [manual install](#install-manually) below.*
+
 ## What's in the box
 
 | Subagent | What it catches | When to invoke |
@@ -28,13 +30,15 @@ The agent didn't lie. It just didn't verify. `bot-deploy-verifier` exists to be 
 
 ## Quick start
 
-### Install via Claude marketplace (recommended)
+### Install via Claude marketplace (recommended once approved)
 
 ```bash
 /plugin install claude-code-audit-stack
 ```
 
 This installs all 3 subagents and the hook. Subagents auto-route via their `description` triggers; the hook fires on `Write|Edit` of `*.report.md`.
+
+> **Note:** This command requires the plugin to be live in Anthropic's official Claude Code plugin marketplace. Submitted 2026-05-03, currently under review. Until approved, use the manual install below.
 
 ### Install manually
 
